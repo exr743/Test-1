@@ -112,6 +112,8 @@ background-color: pink;
   width: 90%;
   height: 90vh;
   margin: auto;
+  display: grid;
+  grid-template-rows: 10% 10% 60% 20%;
   /* here goes your main grid: */
 }
 
@@ -142,6 +144,13 @@ background-color: pink;
   height: 90%;
   margin: auto;
   padding: 20px;
+
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+
   /* here goes your small grid: */
 
 
@@ -153,6 +162,7 @@ background-color: pink;
 .smallGrid div
 {
   border: 1px solid black;
+
 }
 
 
