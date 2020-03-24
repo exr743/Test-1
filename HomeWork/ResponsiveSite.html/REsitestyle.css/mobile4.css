@@ -1,0 +1,54 @@
+.gridLayout
+{
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-areas:  "hea hea hea"
+                        "nav nav nav"
+                        "main main main"
+                        "foo foo foo";
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.gridLayout header
+{
+  grid-area: hea;
+  background-color: lightgray;
+  margin-top: -5vh
+  width: 62vh;
+  text-align: center;
+}
+.gridLayout nav
+{
+  grid-area: nav;
+  background-color: white;
+  width: 62vh;
+}
+.gridLayout main
+{
+  grid-area: main;
+  background-color: lightblue;
+  width: 45vh;
+}
+.gridLayout footer
+{
+  grid-area: foo;
+  background-color: lightgray;
+  width: 45vh;
+}
+
+#Stage
+{
+  width: 300px;
+}
+
+#Light
+{
+  width: 300px;
+}

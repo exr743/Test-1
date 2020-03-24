@@ -1,0 +1,307 @@
+.gridLayout
+{
+  width: 80%;
+  height: 200vh;
+  margin: auto;
+  margin-top: 150px;
+  display: grid;
+  grid-template-areas:  "hea hea  hea"
+                        "nav main main"
+                        "nav main main"
+                        "foo foo foo";
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: .5fr 1fr 1fr;
+
+}
+.gridLayout header
+{
+  text-align: center;
+  grid-area: hea;
+  background-color: lightgrey;
+}
+.gridLayout nav
+{
+  grid-area: nav;
+  background-color: white;
+}
+.gridLayout main
+{
+  grid-area: main;
+  background-color: lightblue;
+}
+.gridLayout footer
+{
+  grid-area: foo;
+  background-color: lightgrey;
+}
+
+h2
+{
+  font-size: 50px;
+  color: grey;
+
+}
+h3
+{
+  color: grey;
+  font-family: fantasy;
+}
+
+h1
+{
+color: Red;
+font-family: monospace;
+font-size: 50px;
+margin: auto;
+color: #222;
+text-shadow: 0px 2px 3px #555;
+
+}
+
+.container
+{
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  width: 90%;
+  box-shadow: 6px 7px 5px 2px #ededed;
+  border-radius: 20px;
+  text-align: left;
+}
+
+h4
+{
+  text-align: center;
+  font-family: monospace;
+  text-decoration-style: wavy;
+  font-size: 20px;
+}
+#Uzi
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+body
+{
+  background-color: #03ebfc
+}
+#Uz
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.UziF
+{
+  font-family:monospace;
+  font-size: 15px
+}
+.container2
+{
+  margin: auto;
+  background-color: grey;
+  width: 90%;
+  box-shadow: 6px 7px 1px 2px #ededed;
+  border-radius: 20px;
+}
+
+.container3
+{
+  text-align: center;
+  font-family: cursive;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  width: 60%;
+  box-shadow: 6px 7px 1px 2px #ededed;
+  border-radius: 50px;
+}
+.container6 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 25px;
+  padding: 80px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+    color: #131313;
+    background-color: #e7e5e4;
+    letter-spacing: .15em;
+    text-shadow:
+      1px -1px 0 #767676,
+      -1px 2px 1px #737272,
+      -2px 4px 1px #767474,
+      -3px 6px 1px #787777,
+      -4px 8px 1px #7b7a7a,
+      -5px 10px 1px #7f7d7d,
+      -6px 12px 1px #828181,
+      -7px 14px 1px #868585,
+      -8px 16px 1px #8b8a89,
+      -9px 18px 1px #8f8e8d,
+      -10px 20px 1px #949392,
+      -11px 22px 1px #999897,
+      -12px 24px 1px #9e9c9c,
+      -13px 26px 1px #a3a1a1,
+      -14px 28px 1px #a8a6a6,
+      -15px 30px 1px #adabab,
+      -16px 32px 1px #b2b1b0,
+      -17px 34px 1px #b7b6b5,
+      -18px 36px 1px #bcbbba,
+      -19px 38px 1px #c1bfbf,
+      -20px 40px 1px #c6c4c4,
+      -21px 42px 1px #cbc9c8,
+      -22px 44px 1px #cfcdcd,
+      -23px 46px 1px #d4d2d1,
+      -24px 48px 1px #d8d6d5,
+      -25px 50px 1px #dbdad9,
+      -26px 52px 1px #dfdddc,
+      -27px 54px 1px #e2e0df,
+      -28px 56px 1px #e4e3e2;
+  }
+
+}
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+#cssmenu {
+  background: #f96e5b;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #333333;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+    $r : 50px;  // glow radius
+  $o : 25px;  // glow offset
+  $d : 2s;    // duration
+  $chars : 7; // # of letters
+  $bg : #111; // background color
+
+  $c : cyan yellow tomato;
