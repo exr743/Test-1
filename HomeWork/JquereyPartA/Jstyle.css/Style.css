@@ -19,7 +19,7 @@
 .gridLayout header
 {
   grid-area: hea;
-  background-color: lightgray;
+  background-color: white;
   margin-top: -5vh
 }
 .gridLayout nav
@@ -30,21 +30,90 @@
 .gridLayout main
 {
   grid-area: main;
-  background-color: lightblue;
+  background-color: white;
 }
 .gridLayout footer
 {
   grid-area: foo;
   background-color: lightgray;
 }
-.container3
+.SmallGridB
+{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.smallGridB div p
+{
+  font-size: 14px;
+  padding: 25px;
+}
+.box3
+{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-color: red;
+}
+
+h1
+{
+  color: Red;
+  font-family: monospace;
+  font-size: 50px;
+  margin: auto;
+  color: #222;
+  text-shadow: 0px 2px 3px #555;
+}
+#list
+{
+  text-align: center;
+}
+#cookie
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+#Egg
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+.containerA
 {
   text-align: center;
   font-family: cursive;
   margin: auto;
   padding: 10px;
-  background-color: white;
-  width: 60%;
+  background-color: #DE3163;
+  width: 35%;
+  box-shadow: 6px 7px 1px 2px #ededed;
+  border-radius: 50px;
+}
+.containerB
+{
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px;
+  background-color: lightblue;
+  width: 25%;
+  box-shadow: 6px 7px 1px 2px #ededed;
+  border-radius: 50px;
+}
+.containerC
+{
+  margin: auto;
+  text-align: center;
+  font-family: cursive;
+  padding: 10px;
+  background-color: yellow;
+  width: 25%;
   box-shadow: 6px 7px 1px 2px #ededed;
   border-radius: 50px;
 }
@@ -57,6 +126,12 @@
   border-radius: 20px;
   text-align: center;
 
+}
+.Wstyle
+{
+  font-family: fantasy;
+  color: #DE3163;
+  font-size: 22px;
 }
 
 
