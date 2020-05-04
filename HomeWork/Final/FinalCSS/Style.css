@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Notable&display=swap');
+
+body
+{
+  background-color: black;
+}
+.gridLayout
+{
+  width: 80%;
+  height: 200vh;
+  margin: auto;
+  margin-top: 150px;
+  display: grid;
+  grid-template-areas:  "hea hea  hea"
+                        "nav main main"
+                        "nav main main"
+                        "foo foo foo";
+
+  grid-template-rows: 10% 100px 20% 5em;
+  grid-template-columns: .5fr 1fr 1fr;
+
+}
+.gridLayout header
+{
+  text-align: center;
+  grid-area: hea;
+  background-color: black;
+  margin-top: -20vh
+}
+
+}
+.gridLayout main
+{
+  grid-area: main;
+  background-color: black;
+}
+.pagePiling
+{
+  background-color: pink;
+}
+
+#SB
+{
+  height: 850px;
+  float: right;
+}
+#Logo
+{
+  object-position: 50% 50%;
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+}
+.LogoContainer
+{
+  position: absolute;
+  right: 950px;
+  width: 200px;
+  height: 120px;
+}
+h1
+{
+  color: #B38A4C;
+  font-size: 80px;
+  font-family: sans-serif;
+  text-align: center;
+}
+h3
+{
+  color: white;
+}
+
+.link {
+  text-align: center;
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 7em;
+	line-height: 1;
+	color: white;
+	display: inline-block;
+}
+.link--kukuri {
+	text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #b2b0a9;
+}
+
+.link--kukuri:hover {
+	color: #b2b0a9;
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;gi
+	height: 16px;
+	width: 100%;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: #F9F9F9;
+	transform: translate3d(-100%,0,0);
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #424242;
+	white-space: nowrap;
+	width: 0%;
+	transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
+}
+h4
+{
+color: white;
+font-family: sans-serif;
+text-align: center;
+font-size: 40px;
+width: 480px;
+
+}
+
+h5
+{
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  text-align: center;
+}
+h6
+{
+  color: white;
+  font-size: 25px;
+  width: 480px;
+}
+
+
+.ContainerA
+{
+  position: absolute;
+    right: 350px;
+    width: 200px;
+    height: 120px;
+
+}
+#cssmenu {
+  background: black;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #333333;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+  #hp
+
+  {
+    position: absolute;
+    right: 150px;
+    width: 600px;
+    height: 750px;
+  }
