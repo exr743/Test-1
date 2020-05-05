@@ -1,0 +1,30 @@
+body
+{
+  background-color: black;
+}
+
+.ml4 {
+  font-family: monospace;
+  font-size: 45px;
+  text-shadow: 3px 3px #ff0000;
+  top: 300px;
+  color: #fc034e;
+  text-align: center;
+  position: relative;
+  font-weight: 900;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0;
+}
+#arrow
+{
+  position: absolute;
+  width: 80px;
+  right: 200px;
+  top: 20px;
+}

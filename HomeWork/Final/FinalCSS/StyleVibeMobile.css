@@ -1,0 +1,58 @@
+/* Mobile Style Sheet Optimized for Iphone X */
+
+.gridLayout
+{
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-areas:  "hea hea hea"
+                        "nav nav nav"
+                        "main main main"
+                        "foo foo foo";
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.gridLayout header
+{
+  grid-area: hea;
+  background-color: #B38A4C;
+  margin-top: -5vh
+}
+
+.gridLayout main
+{
+  grid-area: main;
+  background-color: #B38A4C;
+}
+
+#hp
+{
+  position: absolute;
+  top: 190px;
+  right: 10px;
+  width: 360px;
+  height: 150px;
+}
+p
+{
+  font-family: monospace;
+  font-size: 20px;
+  width: 330px;
+  text-align: center;
+  color: white
+
+}
+
+h2
+{
+  color: white;
+  font-family: monospace;
+  font-size: 50px;
+  width: -90px;
+  text-align: center;

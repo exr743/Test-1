@@ -1,0 +1,122 @@
+/* Mobile Layout Optimized for Iphone X */
+.gridLayout
+{
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-areas:  "hea hea hea"
+                        "nav nav nav"
+                        "main main main"
+                        "foo foo foo";
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.gridLayout header
+{
+  grid-area: hea;
+  background-color: black;
+  margin-top: -5vh
+}
+
+.gridLayout main
+{
+  grid-area: main;
+  background-color: black;
+}
+
+.link {
+  text-align: center;
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 25px;
+	line-height: 1;
+	color: white;
+	display: inline-block;
+}
+.link--kukuri {
+	text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #b2b0a9;
+}
+
+.link--kukuri:hover {
+	color: #b2b0a9;
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;gi
+	height: 16px;
+	width: 50%;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: #F9F9F9;
+	transform: translate3d(-100%,0,0);
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #424242;
+	white-space: nowrap;
+	width: 0%;
+	transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
+}
+.column {
+     width:350px;
+     height:300px;
+     position:absolute;
+     border:1px solid red;
+
+}
+.column2 {
+  width:350px;
+  height:300px;
+  position: relative;
+  top: 315px;
+  border:2px solid blue;
+}
+.column3 {
+  width:350px;
+  height:300px;
+  position: relative;
+  top: 330px;
+  border:2px solid green;
+
+}
+}
+.UM
+{
+  color: white;
+  font-family: cursive;
+  font-size: 15px;
+  text-shadow: 1px 1px #b2b0a9;
+}
+.p1
+{
+  color: white;
+  font-family: serif;
+  font-size: 10px;
+}

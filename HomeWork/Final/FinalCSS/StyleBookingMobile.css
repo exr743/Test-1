@@ -1,0 +1,133 @@
+/* Mobile Layout Optimized for Iphone X */
+.gridLayout
+{
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-areas:  "hea hea hea"
+                        "nav nav nav"
+                        "main main main"
+                        "foo foo foo";
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.gridLayout header
+{
+  grid-area: hea;
+  background-color: white;
+  margin-top: -5vh
+}
+
+.gridLayout main
+{
+  grid-area: main;
+  background-color: white;
+}
+
+.move
+{
+  color: #B38A4C;
+  font-family: monospace;
+  font-size: 40px;
+  text-shadow: 2px 2px black;
+  position: absolute;
+  right: 200px;
+  top: 210px;
+}
+.move2
+{
+  color: #B38A4C;
+  font-family: monospace;
+  font-size: 40px;
+  text-shadow: 2px 2px black;
+  position: absolute;
+  right: 150px;
+  top: 300px;
+}
+.move5
+{
+  position: absolute;
+  top: 150px;
+
+}
+.move3
+{
+  position:relative;
+  top:-50px;
+
+
+}
+.move4
+{
+position: absolute;
+right: 10px;
+top:250px;
+font-size: 35px;
+}
+
+.column {
+  width:380px;;
+  height:150px;
+  position:absolute;
+  border:1px solid #B38A4C;
+
+}
+.column2 {
+  width:380px;
+  height:150px;
+  position: relative;
+  top: 180px;
+  border:2px solid #B38A4C;
+}
+.column3 {
+  width:380px;
+  height:150px;
+  position: relative;
+  top: 210px;
+  border:2px solid #B38A4C;
+
+}
+#F2
+{
+  height: 150px;
+  width: 100px;
+}
+.Box1
+{
+
+  align-content: center;
+  position:relative;
+  top: -25px;
+  width:80px;
+  height:50px;
+  border:1px solid #000;
+  right: -300px;
+}
+.B1
+{
+  color: #B38A4C;
+  font-size: 12px;
+  position:relative;
+  top: -75px;
+  right: -200px;
+}
+h3
+{
+  position: relative;
+  top: -5px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.Price1
+{
+  position: relative;
+ top: 110px;
+  right: -100px;
+  text-decoration: underline;
+}

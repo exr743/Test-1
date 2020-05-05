@@ -1,8 +1,5 @@
-$(document).ready(function() {
-$('#PagePiling').pagepiling();
-$("#section lettering").pagepiling();
+$(document).ready( function(){
 
+$('.fancyTitle').lettering('lines');
 
-
-
-});
+}
